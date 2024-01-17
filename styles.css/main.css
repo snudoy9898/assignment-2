@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+
+/* nav start */
+.navbar {
+  
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.friendly {
+    color: #131318;
+    /* font-family:m; */
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.travel {
+    color: #FF5400;
+    /* font-family: Mulish; */
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.logo-object {
+    width: 48px;
+    height: 56px;
+    position: relative;
+    transform: perspective(10px);
+    transform-origin: 191.01 98;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+li {
+    display: inline-block;
+    margin-right: 25px;
+
+}
+
+li a {
+    color: #424247;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 44px;
+}
+
+.li-home {
+    color: #FF5400;
+    font-family: Mulish;
+
+}
+
+
+/* nav end */
