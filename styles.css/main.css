@@ -199,15 +199,15 @@ body {
     width: 174px;
     height: 52px;
     background: white;
-    background-image: url(../assets/Images/Frame.png);
+    /* background-image: url(../assets/Images/Frame.png);
     background-repeat: no-repeat;
     background-position-x: 135px;
-    background-position-y: 16px;
+    background-position-y: 16px; */
     border-radius: 8px;
     border: none;
     outline: none;
     color: rgba(19, 19, 24, 0.50);
-    font-family: Mulish;
+    font-family: var(--fontPrimary);
     font-size: 16px;
     font-weight: 400;
     padding-left: 16px;
@@ -218,7 +218,7 @@ body {
     padding-right: 84px;
     color: rgba(19, 19, 24, 0.50);
     font-size: 16px;
-    font-family: Mulish;
+    font-family: var(--fontPrimary);
     font-weight: 400;
     word-wrap: break-word;
     width: 174px;
@@ -236,13 +236,13 @@ body {
     height: 52px;
     border: none;
     border-radius: 8px;
-    background-image: url(../assets/Images/Frame.png);
+    /* background-image: url(../assets/Images/Frame.png);
     background-repeat: no-repeat;
     background-position-x: 135px;
-    background-position-y: 16px;
+    background-position-y: 16px; */
     outline: none;
     font-size: 16px;
-    font-family: Mulish;
+    font-family: var(--fontPrimary);
     font-weight: 400;
     color: rgba(19, 19, 24, 0.50);
 }
@@ -292,6 +292,8 @@ body {
 /* Choose Your Destination style start here */
 
 .choose-your-destination {
+    width: 85%;
+    margin: 0 auto;
     margin-top: 100px;
 }
 
@@ -311,5 +313,56 @@ body {
     font-weight: 400;
     line-height: 26px;
 }
+
+#choose-your-destination-gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    /* column-gap: 50px;
+    row-gap: 10px; */
+    border: 2px solid tomato;
+    /* padding-top: 48px; */
+    
+}
+
+#country-1,
+#country-2,
+#country-6,
+#country-7 {
+    grid-column: auto/span 6;
+    border: 2px solid salmon;
+}
+
+#country-3,
+#country-4,
+#country-5 {
+    grid-column: auto/span 4;
+    border: 2px solid red;
+}
+
+#country-1 {
+    /* grid-column: auto/span 6; */
+}
+#country-2 {
+    /* padding-left: 38px;
+    grid-column: auto/span 6; */
+    border: 2px solid violet;
+}
+#country-3 {
+
+}
+#country-4 {
+
+}
+#country-5 {
+
+}
+#country-6 {
+
+}
+#country-7 {
+
+}
+
 
 /* Choose Your Destination style end here */
