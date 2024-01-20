@@ -179,30 +179,28 @@ body {
     color: #FFF;
     background: #FF5400;
     border-radius: 8px;
-    font-family: Mulish;
+    font-family: var(--fontPrimary);
     font-size: 16px;
     font-weight: 400;
     border: none;
     outline: none;
-    background-image: url(../assets/Images/Frame\ \(1\).png);
-    background-repeat: no-repeat;
-    background-position: 2px;
-    background-position-x: 36px;
-    padding-left: 27px;
-
-
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+.search-icon {
+    padding-right: 2px;
+    width: 24px;
+
+}
 
 
 .select-type {
     width: 174px;
     height: 52px;
     background: white;
-    /* background-image: url(../assets/Images/Frame.png);
-    background-repeat: no-repeat;
-    background-position-x: 135px;
-    background-position-y: 16px; */
     border-radius: 8px;
     border: none;
     outline: none;
@@ -236,10 +234,6 @@ body {
     height: 52px;
     border: none;
     border-radius: 8px;
-    /* background-image: url(../assets/Images/Frame.png);
-    background-repeat: no-repeat;
-    background-position-x: 135px;
-    background-position-y: 16px; */
     outline: none;
     font-size: 16px;
     font-family: var(--fontPrimary);
@@ -318,11 +312,13 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 300px);
-    /* column-gap: 50px;
-    row-gap: 10px; */
-    border: 2px solid tomato;
-    /* padding-top: 48px; */
-    
+    column-gap: 50px;
+    row-gap: 24px;
+    /* border: 2px solid tomato; */
+    padding-top: 48px;
+    position: relative;
+    text-align: center;
+
 }
 
 #country-1,
@@ -330,39 +326,126 @@ body {
 #country-6,
 #country-7 {
     grid-column: auto/span 6;
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
 }
 
 #country-3,
 #country-4,
 #country-5 {
     grid-column: auto/span 4;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+}
+
+.country>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 #country-1 {
-    /* grid-column: auto/span 6; */
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+
 }
+
 #country-2 {
-    /* padding-left: 38px;
-    grid-column: auto/span 6; */
-    border: 2px solid violet;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray -101px -108.075px / 135.253% 172.05% no-repeat;
 }
+
 #country-3 {
-
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
+
 #country-4 {
-
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
+
 #country-5 {
-
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
+
 #country-6 {
-
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
+
 #country-7 {
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.country-text-style {
+    color: #FFF;
+    font-family: var(--fontPrimary);
+    font-size: 28px;
+    font-weight: 800;
+    position: absolute;
 
 }
 
+#country-1 h4 {
+    padding-left: 328px;
+    padding-top: 132px;
+    padding-bottom: 133px;
+}
+
+#country-2 h4 {
+    padding-left: 318px;
+    padding-top: 132px;
+    padding-bottom: 133px;
+}
+
+#country-3 h4 {
+    padding-left: 201px;
+    padding-top: 132px;
+    padding-bottom: 133px;
+}
+
+#country-4 h4 {
+    padding-left: 163px;
+    padding-top: 132px;
+    padding-bottom: 133px;
+}
+
+#country-5 h4 {
+    padding-left: 196px;
+    padding-top: 132px;
+    padding-bottom: 133px;
+}
+
+#country-6 h4 {
+    padding-left: 307px;
+    padding-top: 132px;
+    padding-bottom: 133px;
+}
+
+#country-7 h4 {
+    padding-left: 294px;
+    padding-top: 132px;
+    padding-bottom: 133px;
+}
 
 /* Choose Your Destination style end here */
+
+/* Why Choose Us Style Start Here */
+
+.container {
+    /* display: flex; */
+}
+
+.container-box h3,
+p {
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+}
+
+
+/* Why Choose Us Style End Here */
