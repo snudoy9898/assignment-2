@@ -1,0 +1,48 @@
+@media screen and (max-width:600px) {
+    .header-section {
+        max-width: 100%;
+        margin: auto;
+        margin-top: 32px;
+        display: flex;
+    }
+
+    .nav-items-container {
+        flex-direction: column;
+        margin: auto;
+        gap: 20px;
+    }
+
+    .form {
+        flex-direction: column;
+        margin: auto;
+        gap: 24px;
+    }
+    .banner {
+        max-width: 100%;
+    }
+    .banner-search-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .img-container img {
+        width: 100%;
+    }
+
+    .select-type {
+        width: 100%;
+    }
+
+    .where-go {
+        width: 100%;  
+    }
+
+    .when {
+        width: 100%;
+    }
+
+}
